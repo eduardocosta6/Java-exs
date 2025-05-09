@@ -1,0 +1,65 @@
+package ficha12;
+
+import javax.swing.JOptionPane;
+
+public class Ex1 {
+	
+	public static void voltagem () {
+	int r = Integer.parseInt(JOptionPane.showInputDialog("Inserir resistencia"));
+	int i = Integer.parseInt(JOptionPane.showInputDialog("Inserir intensidade"));
+	
+	int v = i * r;
+	}
+	
+	public static void intensidade() {
+		int v = Integer.parseInt(JOptionPane.showInputDialog("Inserir voltagem"));
+		int r = Integer.parseInt(JOptionPane.showInputDialog("Inserir resistencia"));
+		
+		int i = v / r;
+	}
+	
+	
+	public static void resistencia() {
+		int  v = Integer.parseInt(JOptionPane.showInputDialog("Inserir voltagem"));
+		int i = Integer.parseInt(JOptionPane.showInputDialog("Inserir intensidade"));
+		
+		int r = v / i;
+	}
+	
+	
+
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog(" 1-resistencia / 2-intensidade / 3-voltagem"));
+		
+		
+		 n1 = 2;
+		 switch(n1) {
+		 case 1 : {
+			 System.out.println("A resistencia é");
+			 resistencia();
+			 break;
+		 } case 2 : {
+			 System.out.println("A intensidade é");
+			 intensidade();
+			 break;
+		 } case 3 : {
+			 System.out.println("A voltagem é");
+			voltagem();
+			break;
+		 } default : {
+			 System.out.println("===ERROR===");
+			 break;
+		 }
+		 }
+
+	}
+	
+	
+	
+
+}

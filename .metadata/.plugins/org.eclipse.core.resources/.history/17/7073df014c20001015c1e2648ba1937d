@@ -1,0 +1,47 @@
+package ficha12;
+
+import javax.swing.JOptionPane;
+
+public class Ex4 {
+	
+	
+	public static int pedirNumInt( String s) {
+		
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog(s));
+		
+		return n1;
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int op;
+		
+		do {
+			
+			 op= pedirNumInt("1 para inserir numero / 0 para sair");
+			int r ;
+			
+			 switch(op) {
+			 case 1 : {
+				 
+				 r = pedirNumInt("da ca um numero toto");
+
+				 System.out.println(r);
+				 break;
+			 }  case 0 : {
+				 System.out.println("FIM");
+				break;
+			 } default : {
+				 System.out.println("===ERROR===");
+				 break;
+			 }
+			 }
+			
+			
+		} while( op!= 0);
+
+
+	}
+
+}

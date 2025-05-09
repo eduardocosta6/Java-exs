@@ -1,0 +1,25 @@
+package ficha11;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		double x1 = 0 + (int) (20 * Math.random());
+		double x2 = 0 + (int) (20 * Math.random());
+		
+		double x, y = 0;
+		
+		double y1 = 5;
+		double y2 = 4;
+		
+		
+		double d =   Math.pow (Math.sqrt(x1 - x2), 2) + Math.pow (Math.sqrt(y1 - y), 2) ;
+		
+		
+		System.out.println(d);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package ficha11;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		double x1 = 0 + (int) (20 * Math.random());
+		double x2 = 0 + (int) (20 * Math.random());
+		
+		System.out.println(x1);
+		System.out.println(x2);
+
+	}
+
+}

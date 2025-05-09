@@ -1,0 +1,51 @@
+package ficha10;
+
+public class Ex1D {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int n = 5;
+
+        for (int l = 1; l <= n; l++) {
+
+            for (int e = 1; e < l; e++) {
+                System.out.print("  ");
+            }
+
+            System.out.print(l + " ");
+
+            int espacos = (n - l) * 2 - 1;
+            for (int s = 1; s <= espacos; s++) {
+                System.out.print("  ");
+            }
+
+            if (l != n) {
+                System.out.print(l);
+            }
+
+            System.out.println();
+        }
+        
+        for (int l = 1; l <= n; l++) {
+
+            for (int e = 1; e < l; e++) {
+                System.out.print("  ");
+            }
+
+            System.out.print(l + " ");
+
+            int espacos = (n - l) * 2 - 1;
+            for (int s = 1; s <= espacos; s++) {
+                System.out.print("  ");
+            }
+
+            if (l != n) {
+                System.out.print(l);
+            }
+
+            System.out.println();
+        }
+		 
+	}
+}

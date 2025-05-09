@@ -1,0 +1,21 @@
+package ficha10;
+
+public class Ex4C {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 int tamanho = 5;
+		 for(int l = 1; l <= tamanho; l++) {
+			 int limit = 2 * l - 1;
+			 for ( int c = 1; c <= limit; c++) {
+					 System.out.print( c + " " );
+			 }
+			 System.out.println();
+		 }
+		 
+		
+
+	}
+
+}

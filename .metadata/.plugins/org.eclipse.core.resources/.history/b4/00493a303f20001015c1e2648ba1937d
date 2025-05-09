@@ -1,0 +1,71 @@
+package ficha12;
+
+import javax.swing.JOptionPane;
+public class Ex2 {
+	// =====================================
+    public static void voltagem() {
+        double vol, inten, res;
+        
+        inten = Double.parseDouble(JOptionPane.showInputDialog("Insira a Intensidade:"));
+        res = Double.parseDouble(JOptionPane.showInputDialog("Insira a Resistência:"));
+        
+        vol = inten * res;
+        System.out.println("Voltagem: " + vol);
+    }
+    // =====================================
+    public static void intensidade() {
+        double vol, inten, res;
+        
+        vol = Double.parseDouble(JOptionPane.showInputDialog("Insira a Voltagem:"));
+        res = Double.parseDouble(JOptionPane.showInputDialog("Insira a Resistência:"));
+        
+        inten = vol / res;
+        System.out.println("Intensidade: " + inten);
+    }
+    // =====================================
+    public static void resistencia() {
+        double vol, inten, res;
+        
+        vol = Double.parseDouble(JOptionPane.showInputDialog("Insira a Voltagem:"));
+        inten = Double.parseDouble(JOptionPane.showInputDialog("Insira a Intensidade:"));
+        
+        res = vol / inten;
+        System.out.println("Resistência: " + res);
+    }
+    // =====================================
+
+
+public static void main(String[] args) {
+    // TODO Auto-generated method stub
+
+    int op = Integer.parseInt(JOptionPane.showInputDialog("1 - Voltagem, 2 - Intensidade, 3 - Resistência, 0 - Sair"));
+    
+    switch(op) {
+    case 1:{
+        voltagem();
+        
+        op = Integer.parseInt(JOptionPane.showInputDialog("1 - Voltagem, 2 - Intensidade, 3 - Resistência, 0 - Sair"));
+    }
+    case 2:{
+        intensidade();
+        
+        op = Integer.parseInt(JOptionPane.showInputDialog("1 - Voltagem, 2 - Intensidade, 3 - Resistência, 0 - Sair"));
+    }
+    case 3:{
+        resistencia();
+        
+        op = Integer.parseInt(JOptionPane.showInputDialog("1 - Voltagem, 2 - Intensidade, 3 - Resistência, 0 - Sair"));
+    }
+    case 0:{
+        System.out.println("Program concluded.");
+        break;
+    }
+    default:{
+        System.out.println("---- Error ----");
+        break;
+    }
+    }
+    
+}
+
+}

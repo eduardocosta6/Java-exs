@@ -1,0 +1,14 @@
+package ficha9;
+
+public class Ex1c {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for (int n = 91; n >= 81; n--) {
+			System.out.println(n);
+		}
+
+	}
+
+}

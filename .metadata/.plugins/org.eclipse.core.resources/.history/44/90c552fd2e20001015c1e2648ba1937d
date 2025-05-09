@@ -1,0 +1,61 @@
+package ficha12;
+
+import javax.swing.JOptionPane;
+
+public class Ex1 {
+	
+	// #######################################
+	
+	public static void intensidade() {
+		double v = Double.parseDouble(JOptionPane.showInputDialog("Inserir voltagem"));
+		double r = Double.parseDouble(JOptionPane.showInputDialog("Inserir resistencia"));
+		
+		double i = v / r;
+		System.out.println("A intensidade é " + i);
+	}
+	
+	// #######################################
+	
+	
+	public static void resistencia() {
+		double v = Double.parseDouble(JOptionPane.showInputDialog("Inserir voltagem"));
+		double i = Double.parseDouble(JOptionPane.showInputDialog("Inserir intensidade"));
+		double r = v / i;
+		System.out.println("A resistencia é " + r);
+	}
+	
+	public static void voltagem() {
+		double i = Double.parseDouble(JOptionPane.showInputDialog("Inserir intensidade"));
+		double r = Double.parseDouble(JOptionPane.showInputDialog("Inserir resistencia"));
+		
+		double voltagem = i * r;
+		System.out.println("A voltagem é " + voltagem);
+	}
+	
+	//################################################
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog(" 1-resistencia / 2-intensidade / 3-voltagem / 0-Sair"));
+		
+		 switch(n1) {
+		 case 1 : {
+			 resistencia();
+			 n1 = Integer.parseInt(JOptionPane.showInputDialog(" 1-resistencia / 2-intensidade / 3-voltagem / 0-Sair"));
+		 } case 2 : {
+			 intensidade();
+			 n1 = Integer.parseInt(JOptionPane.showInputDialog(" 1-resistencia / 2-intensidade / 3-voltagem / 0-Sair"));
+		 } case 3 : {
+			 voltagem();
+			 n1 = Integer.parseInt(JOptionPane.showInputDialog(" 1-resistencia / 2-intensidade / 3-voltagem / 0-Sair"));
+		 }
+		 case 0 : {
+			 System.out.println("o programa fechou");
+			 break;
+		 }default : {
+			 System.out.println("===ERROR===");
+			 break;
+		 }
+		 }
+	}
+}

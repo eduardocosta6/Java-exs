@@ -1,0 +1,42 @@
+package ficha11;
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		double x1 = 0 + (int) (20 * Math.random());
+		double x2 = 0 + (int) (20 * Math.random());
+		
+		double  y = 0;
+		double x = 0;
+		
+		double y1 = 5;
+		double y2 = 4;
+		
+		double pi = Math.PI;
+		
+		double raio = 10;
+		
+		double d = raio * 2;
+		
+		
+		double area = pi * Math.pow(raio, 2);
+		
+		
+		double dp1 =    Math.sqrt(Math.pow((x1 - x), 2)) + Math.pow((y1 - y), 2) ;
+		
+		
+		
+		System.out.println(area);
+		System.out.println(dp1);
+		
+		if ( dp1 <= area) {
+			System.out.println(dp1);
+		}
+		
+
+	}
+
+}

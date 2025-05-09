@@ -1,0 +1,75 @@
+package ficha12;
+
+import javax.swing.JOptionPane;
+
+public class Ex_4_5_6 {
+	
+
+	
+	
+	public static int pedirNumInt( String s) {
+		
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog(s));
+		
+		return n1;
+	}
+	
+	
+	public static Double pedirNumDouble( String s) {
+		
+		double n2 = Double.parseDouble(JOptionPane.showInputDialog(s));
+		
+		return n2;
+	}
+	
+	public static String pedirString( String s) {
+		
+		String n3 = JOptionPane.showInputDialog(s);
+		
+		return n3;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int op;
+		
+		do {
+			
+			 op = pedirNumInt("1 para inserir numero / 2 para double / 3 para string / 0 para sair");
+			
+			 switch(op) {
+			 case 1 : {
+				 
+				int r = pedirNumInt("da ca um numero inteiro");
+
+				 System.out.println(r);
+				 break;
+			 } case 2 : {
+				 
+				double r = pedirNumDouble("da ca um numero doble");
+
+				 System.out.println(r);
+				 break;
+			 }case 3 : {
+				 
+				String r = pedirString("da ca uma string");
+
+				 System.out.println(r);
+				 break;
+			 } case 0 : {
+				 System.out.println("FIM");
+				break;
+			 } default : {
+				 System.out.println("===ERROR===");
+				 break;
+			 }
+			 }
+			
+			
+		} while( op!= 0);
+
+
+	}
+
+}

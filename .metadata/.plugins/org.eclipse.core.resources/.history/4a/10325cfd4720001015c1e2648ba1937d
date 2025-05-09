@@ -1,0 +1,49 @@
+package ficha12;
+
+import javax.swing.JOptionPane;
+
+public class Ex4 {
+	
+	
+	public static int string( String s) {
+		
+		int n1 = Integer.parseInt(s);
+		
+		return n1;
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int op;
+		
+		do {
+			
+			 op= Integer.parseInt(JOptionPane.showInputDialog("Inserir numero / 0 para sair"));
+			int r ;
+			
+			 switch(op) {
+			 case 1 : {
+
+				String  s = JOptionPane.showInputDialog("Inserir  um numero inteiro ");
+				 
+				 r = string(s);
+
+				 System.out.println(r);
+				 break;
+			 }  case 0 : {
+				 System.out.println("FIM");
+				break;
+			 } default : {
+				 System.out.println("===ERROR===");
+				 break;
+			 }
+			 }
+			
+			
+		} while( op!= 0);
+
+
+	}
+
+}

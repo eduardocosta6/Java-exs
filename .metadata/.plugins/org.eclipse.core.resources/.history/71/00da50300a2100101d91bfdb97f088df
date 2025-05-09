@@ -1,0 +1,29 @@
+package ficha11;
+
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		
+		int c2 = 1 + (int) (11 * Math.random());
+		
+		
+		
+		
+		for ( int c1x = 0 ; c1x <= 5 ; c1x ++) {
+			int c1 = 1 + (int) (49 * Math.random());
+			
+			System.out.print(c1 + " ");
+			
+			if (c1 == c1) {
+				System.out.print(" Repetido Gerar de novo ");
+			}
+			
+		}
+
+	}
+
+}

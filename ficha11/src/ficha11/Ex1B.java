@@ -1,0 +1,15 @@
+package ficha11;
+
+public class Ex1B {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int x = -10 + (int)( 21 * Math.random());
+		
+		System.out.print(x);
+
+	}
+
+}

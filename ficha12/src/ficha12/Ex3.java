@@ -1,0 +1,101 @@
+package ficha12;
+
+import javax.swing.JOptionPane;
+
+public class Ex3 {
+	
+	// #######################################
+	
+	
+	
+	
+	public static double div(double a, double b ) {
+		double divi = 0;
+	
+		divi = a / b;
+		
+		return divi;
+		
+	}
+	
+	public static double mult(double a, double b ) {
+		double mult = 0;
+		
+		mult = a * b;
+	
+		return mult;
+		
+	}
+	
+	public static void intensidade() {
+		double v = Double.parseDouble(JOptionPane.showInputDialog("Inserir voltagem"));
+		double r = Double.parseDouble(JOptionPane.showInputDialog("Inserir resistencia"));
+		
+		double i = 0;
+		
+		i = div(v, r);
+		
+		System.out.println("A intensidade é " + i);
+	}
+	
+	// #######################################
+	
+	
+	public static void resistencia() {
+		double v = Double.parseDouble(JOptionPane.showInputDialog("Inserir voltagem"));
+		double i = Double.parseDouble(JOptionPane.showInputDialog("Inserir intensidade"));
+		
+		double r = 0;
+				
+		r = div(v, i);
+		System.out.println("A resistencia é " + r);
+	}
+	
+	public static void voltagem() {
+		double i = Double.parseDouble(JOptionPane.showInputDialog("Inserir intensidade"));
+		double r = Double.parseDouble(JOptionPane.showInputDialog("Inserir resistencia"));
+		
+		double voltagem = 0;
+			
+		voltagem = mult(i, r);
+		
+		
+		System.out.println("A voltagem é " + voltagem);
+	}
+	
+	//################################################
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1;
+		
+		do {
+			 n1 = Integer.parseInt(JOptionPane.showInputDialog(" 1-resistencia / 2-intensidade / 3-voltagem / 0-Sair"));
+		
+		
+		 switch(n1) {
+		 case 1 : {
+			 resistencia();
+			 break;
+		 } case 2 : {
+			 intensidade();
+			 break;
+		 } case 3 : {
+			 voltagem();
+			 break;
+		 }
+		 case 0 : {
+			 System.out.println("o programa fechou");
+			 break;
+		 }default : {
+			 System.out.println("===ERROR===");
+		 }
+		 }
+		 } while ( n1 !=0);
+	
+		
+	
+
+}
+
+}
