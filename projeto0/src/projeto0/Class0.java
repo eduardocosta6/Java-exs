@@ -210,6 +210,9 @@ public class Class0 {
 			 System.out.print("\n");
 		 }
 
+
+		 // array
+
 		 int [] num = new int[3];
 
 		 num[0] = 10;
